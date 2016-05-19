@@ -1,0 +1,7 @@
+<button onclick={{action addItem}}>Add Item</button>
+isValid: {{isValid}}
+<ul>
+  {{#each items as |item index|}}
+    {{some-item item=item index=index delete=(action deleteItem item)}}
+  {{/each}}
+</ul>
